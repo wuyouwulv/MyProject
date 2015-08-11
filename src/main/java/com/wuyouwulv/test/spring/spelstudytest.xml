@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">	
+
+<bean id="spelstudy" class="com.wuyouwulv.test.spring.SpELStudy">
+	<property name="count" value="#{5}" />
+	<property name="message" value="The value is #{5}" />
+	<property name="capacity" value="#{89.7}" />
+	<property name="capacity2" value="#{1e4}" />
+	<!-- property name="name" value="#{'Chuck'}" / -->
+	<property name='name' value='#{"Chuck"}' />
+	<property name="enabled" value="#{false}" />
+</bean>
+
+</beans>

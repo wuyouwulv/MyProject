@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">	
+		
+<bean id="hank" class="com.wuyouwulv.test.spring.OneManBand3">
+	<property name="instruments">
+		<props>
+			<prop key="GUITAR">STRUM STRUM STRUM</prop>
+			<prop key="CYMBAL">CREASH CRASH CRASH</prop>
+			<prop key="HARMONICA">HUM HUM HUM</prop>
+		</props>
+	</property>
+</bean>
+
+</beans>

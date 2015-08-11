@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">	
+
+<bean id="saxophone" class="com.wuyouwulv.test.spring.Saxophone" />
+<bean id="piano" class="com.wuyouwulv.test.spring.Piano" />
+<bean id="guitar" class="com.wuyouwulv.test.spring.Guitar" />
+		
+<bean id="hank" class="com.wuyouwulv.test.spring.OneManBand2">
+	<property name="instruments">
+		<map>
+			<entry key="GUITAR" value-ref="guitar" />
+			<entry key="PIANO" value-ref="piano" />
+			<entry key="SAXOPHONE" value-ref="saxophone" />
+		</map>
+	</property>
+</bean>
+
+</beans>
